@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+.board{
+    width:  500px;
+    height: 500px;
+    display: grid;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 0 0 1em;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mode span{
+    font-weight: bold;
+}
+.mode{
+    margin: 0 0 1em;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0em 0.4em 0;
+}
+.buttons > div{
+    display: flex;
+    align-items: center;
+}
+.buttons *{
+    background: none;
+    border: none;
+    margin: 0 0.3em 0 0;
+    min-width: 60px;
+    height: 30px;
+}
+
+.buttons button{
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 6px;
+}
+.buttons input{
+    margin: 0 0.3em 0 0;
+    height: 40px;
+}
+
+.black{
+    background-color: #292121;
+    color: whitesmoke;
+}
+.random{
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    color: whitesmoke;
+    text-shadow: 0px 0px 7px black;
+}
+.reset{
+    border: 1px solid #c41010;
+    color: #c41010;
+}
+
+.form button{
+    border: 1px solid #000000;
+    border-radius: 2px;
+    background: none;
+    height: 30px;
+}
+
+.set-size{
+    padding: 3px 6px;
+    margin: 0.5em 0.4em 1em 0;
+    border-radius: 2px;
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+}
+
+button:hover, .buttons input:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="title">
+            <h1>SketchPad</h1>
+        </div>
+        <div class="content">
+            <div class="mode"><span>Mode: </span>Not Coloring</div>
+            <div class="board"></div>
+            <div class="buttons">
+                <div>
+                    <input type="color" id="color-input" onchange="changeColor(this.value)">
+                    <button class="black" onclick="changeColor('black')">Black</button>
+                    <button class="white" onclick="changeColor('white')">Erasor</button>
+                    <button class="random" onclick="changeColor('random')">Random</button>
+                </div>
+                
+                <button class="reset" onclick="reset()">Reset</button>
+            </div>
+            <div class="form">
+                <input class="set-size" type="text" placeholder="Size of Board" onchange="changeSize(this.value)">
+                <button>Set Size</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
+
